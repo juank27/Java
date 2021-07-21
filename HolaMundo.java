@@ -1,8 +1,11 @@
+import java.util.Scanner;
 public class HolaMundo{
    public static void main(String[] args) 
    {
       System.out.println("Hola mundo");
-      System.out.println(f(5.0));
+      Scanner sc = new Scanner(System.in);
+      double d = sc.nextDouble();
+      System.out.println(f(d));
    }
 
    public static double f(double x) 
