@@ -35,4 +35,20 @@ public class estructurasControl {
          return true;
       }
    }
+      //switch
+   public static int vocales(char ch){
+      int value = 0;
+      switch (ch) {
+         case 'a':
+            value = 1;   
+            break;
+         case 'b':
+            value = 2;
+            break;
+         default:
+            value = 0;
+            break;
+      }
+      return value;
+   }
 }
