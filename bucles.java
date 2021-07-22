@@ -3,6 +3,7 @@ public class bucles {
       //Ciclo while
       cicloWhile();
       suma(5);
+      frutas();
    }
    //ciclo While
    public static void cicloWhile() {
@@ -20,5 +21,12 @@ public class bucles {
          s = s+i;
       }
       return s;
+   }
+   //for each
+   public static void frutas() {
+      String []frutas = {"Naranja", "Maracuya", "Guayaba"};
+      for (String f : frutas) {
+         System.out.println(f);
+      }
    }
 }
