@@ -23,4 +23,29 @@ public class ArreglosMatrices {
       }
       return m;
    }
+   //Matrices
+   public static void matrices_Metodos() {
+      char [][] C= new char[10][20]; // matriz de 10x20 caracteres
+      int[][] A = new int[5][4]; // matriz de 5x4 enteros
+      double[][] v = new double[6][6]; // matriz de 6x6 reales
+      boolean[][] b = new boolean[2][3]; // matriz de 2x3 booleanos
+   }
+   public static int[][] cuadrados_matriz(int[][] X) {
+      int[][] Y = new int[X.length][X[0].length];
+      for (int i = 0; i < X.length; i++) {
+         for (int j = 0; j < X[i].length; j++) {
+            Y[i][j] = X[i][j] * X[i][j];
+         }
+      }
+      return Y;
+   }
+   public static boolean matriz_simetrica(char[][] X) {
+      boolean bandera = true;
+      for (int i = 0; i < X.length - 1; i++) {
+         for (int j = i + 1; j < X.length; j++) {
+            bandera &= (X[i][j] == X[j][i]);
+         }
+      }
+      return bandera;
+   }
 }
