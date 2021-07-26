@@ -23,6 +23,12 @@ public class ArreglosMatrices {
       }
       return m;
    }
+   // imprimir un array
+   public static void leerArray(int[] array) {
+      for (int f : array) {
+         System.out.print(f);
+      }
+   }
    //Matrices
    public static int matrices_Metodos() {
       //char [][] C= new char[10][20]; // matriz de 10x20 caracteres
