@@ -21,10 +21,10 @@ public class Perro {
    public String nombre;
    public String colorOjos;
    //Constructor 
-   Perro(int edad, String nombre, String coloOjos){
+   Perro(int edad, String nombre, String colorOjos){
       this.edad = edad;
       this.nombre = nombre;
-      this.colorOjos = coloOjos;
+      this.colorOjos = colorOjos;
    }
    //Metodos
    public void ladrar(){
