@@ -26,6 +26,9 @@ public class Perro {
       this.nombre = nombre;
       this.colorOjos = colorOjos;
    }
+   //constructor vacio
+   Perro(){
+   }
    //Metodos
    public void ladrar(){
       System.out.println("Guau guau");
