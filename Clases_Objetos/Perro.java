@@ -11,6 +11,10 @@ public class Perro {
       
       miPerro1.ladrar();
       miPerro2.saludar();
+      //que perro es mayor
+      miPerro1.quienEsMayor(miPerro2);
+      //Saludar otro perro
+      miPerro1.saludarOtroPerro(miPerro2);
    }
    //Atributos
    public int edad;
@@ -28,5 +32,19 @@ public class Perro {
    }
    public void saludar() {
       System.out.println("Hola, mi nombre es " + nombre);
+   }
+   //comparar edad de dos perros
+   public void quienEsMayor(Perro otroPerrro){
+      if (this.edad > otroPerrro.edad) {
+         System.out.println("Soy mayor que " + otroPerrro.nombre);
+      }else if (this.edad == otroPerrro.edad) {
+         System.out.println("Tenemos la misma edad");
+      }else{
+         System.out.println(otroPerrro.nombre + " es mayor que yo");
+      }
+   }
+   //Saludar a otro perro
+   public void saludarOtroPerro(Perro otroPerro) {
+      System.out.println("Hola " + otroPerro.nombre + ", yo soy " + this.nombre);
    }
 }
