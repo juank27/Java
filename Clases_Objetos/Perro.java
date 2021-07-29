@@ -13,8 +13,10 @@ public class Perro {
       miPerro2.saludar();
       //que perro es mayor
       miPerro1.quienEsMayor(miPerro2);
+      miPerro.quienEsMayor(miPerro1);
       //Saludar otro perro
       miPerro1.saludarOtroPerro(miPerro2);
+      miPerro.saludarOtroPerro(miPerro1);
    }
    //Atributos
    public int edad;
