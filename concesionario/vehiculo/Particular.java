@@ -1,4 +1,4 @@
-package vehiculo;
+package concesionario.vehiculo;
 
 /**
  * Class representing a SUV
@@ -13,7 +13,7 @@ public class Particular extends Vehiculo{
      * @param pasajeros Number of passengers
      * @param velocidad Speed of the Vehicle
      */
-   public Particular(int pasajeros, double velocidad, String color) {
+    public Particular(int pasajeros, double velocidad, String color) {
 	super(pasajeros, velocidad);
         this.color = color;
     }

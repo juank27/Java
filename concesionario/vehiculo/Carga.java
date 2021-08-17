@@ -1,5 +1,5 @@
 
-package vehiculo;
+package concesionario.vehiculo;
 
 /**
  * Class representing a cargo car 
@@ -18,10 +18,8 @@ public class Carga extends Vehiculo{
      * @param velocidad Speed of the Vehicle
      * @param peso Load capability
      */
-   public Carga(int pasajeros, double velocidad, int peso) {
+    public Carga(int pasajeros, double velocidad, int peso) {
 	super(pasajeros, velocidad);
 	this.capacidad = peso>5?5:peso;
     }
-
-  
 }

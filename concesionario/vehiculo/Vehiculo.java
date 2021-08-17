@@ -1,5 +1,5 @@
 
-package vehiculo;
+package concesionario.vehiculo;
 
 /**
  * Abstract Class representing a Vehicle

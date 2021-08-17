@@ -1,4 +1,4 @@
-package vehiculo;
+package concesionario.vehiculo;
 
 import java.util.ArrayList;
 
