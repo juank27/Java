@@ -9,7 +9,7 @@ import java.util.ArrayList;
  */
 public class Concesionario{
 
-    private String nombre;
+    //private String nombre;
     private ArrayList<Vehiculo> vehiculos;
     
     /**
@@ -17,7 +17,7 @@ public class Concesionario{
      * @param nombre Nombre del concesionario
      */
     public Concesionario(String nombre) {
-	this.nombre = nombre;
+	//this.nombre = nombre;
         this.vehiculos = new ArrayList<>();
     }
     
