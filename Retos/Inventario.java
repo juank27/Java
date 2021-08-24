@@ -6,23 +6,16 @@ public class Inventario {
    
    public static void main(String[] args) {
       ArrayList<String> n = new ArrayList<>();
-      ArrayList<Integer> s = new ArrayList<>();
-      n.add("carne");
-      n.add("mango");
-      n.add("frijol");
-      n.add("leche");
+      ArrayList<String> s = new ArrayList<>();
       n.add("avena");
-      n.add("carne");
       n.add("arroz");
-      n.add("frijol");
+      n.add("pera");
       n.add("leche");
-      n.add("avena");
-      String name = "leche";
-      s.add(1);
-      s.add(3);
-      s.add(6);
-      s.add(8);
-      s = consultarAlimentosParaCambio(s, n, name);
+      n.add("trigo");
+      s.add("pera");
+      s.add("leche");
+      s.add("mango");
+      s = cotejarStockTiendas(n, s);
       for (int i = 0; i < s.size(); i++) {
          System.out.println(s.get(i));
       }
@@ -51,5 +44,15 @@ public class Inventario {
          }  
       }
       return indiceRetorno;
+   }
+      //elementos que hay en la tienda 1 pero no hay en la 2
+   public static ArrayList<String> cotejarStockTiendas(ArrayList<String> tienda1, ArrayList<String> tienda2) {
+      ArrayList<String> stock = new ArrayList<>();
+      for (int i = 0; i < tienda1.size(); i++) {
+         if (tienda2.contains(tienda1.get(i)) != true) {
+            stock.add(tienda1.get(i));
+         }
+      }
+      return stock;
    }
 }
