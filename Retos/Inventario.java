@@ -3,23 +3,6 @@ package Retos;
 import java.util.ArrayList;
 
 public class Inventario {
-   
-   public static void main(String[] args) {
-      ArrayList<String> n = new ArrayList<>();
-      ArrayList<String> s = new ArrayList<>();
-      n.add("avena");
-      n.add("arroz");
-      n.add("pera");
-      n.add("leche");
-      n.add("trigo");
-      s.add("pera");
-      s.add("leche");
-      s.add("mango");
-      s = cotejarStockTiendas(n, s);
-      for (int i = 0; i < s.size(); i++) {
-         System.out.println(s.get(i));
-      }
-   }
       //Retorna lista sin elementos repetidos
    public static ArrayList<String> consultarAlimentos(ArrayList<String> nombres) {
       ArrayList<String> ordenado = new ArrayList<>();
@@ -54,5 +37,28 @@ public class Inventario {
          }
       }
       return stock;
+   }
+      //intercambio entre tiendas
+   public static Integer calcularIntercambios(ArrayList<String> tienda1, ArrayList<String> tienda2) {
+      Integer tiendaa1 = 0;
+      Integer tiendaa2 = 0;
+      Integer intercambios = 0;
+      for (int i = 0; i < tienda1.size(); i++) {
+         if (tienda2.contains(tienda1.get(i)) != true) {
+            tiendaa2 += 1;
+         }
+      }
+      for (int i = 0; i < tienda2.size(); i++) {
+         if (tienda1.contains(tienda2.get(i)) != true) {
+            tiendaa1 += 1;
+         }
+      }
+      if (tiendaa1 > tiendaa2) {
+         intercambios = tiendaa2;
+      }
+      else{
+         intercambios = tiendaa1;
+      }
+      return intercambios;
    }
 }
